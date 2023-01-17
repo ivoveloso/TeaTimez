@@ -14,11 +14,11 @@ import OrderScreen from './screens/OrderScreen';
 import OrderHisotyScreen from './screens/OrderHisotyScreen';
 import ProfileScreen from './screens/ProfileScreen';
 
-function App () {
+function App() {
     // get cart from redux store using useSelector
     const cart = useSelector(state => state.cart);
     // decontructure cart to get cartItems
-    const {cartItems} = cart;
+    const { cartItems } = cart;
     //get userInfo from redux store
     const userSignin = useSelector(state => state.userSignin);
     const { userInfo } = userSignin;
@@ -35,7 +35,7 @@ function App () {
                 <header className='row'>
                     <div>
                         <Link className='brand' to='/'>
-							Zankoo
+                            TeaTime
                         </Link>
                     </div>
                     <div>
@@ -43,18 +43,18 @@ function App () {
                             Cart
                             {
                                 cartItems.length > 0 && (
-                                    <span className='badge'>{ cartItems.length }</span>
+                                    <span className='badge'>{cartItems.length}</span>
                                 )
-                            }  
+                            }
                         </Link>
                         {
-                            userInfo 
+                            userInfo
                                 ? (
                                     <div className='dropdown'>
                                         <Link to="#">
-                                            { userInfo.name } 
-                                            <i className="fa fa-caret-down"></i>{ ' ' }
-                                        </Link> 
+                                            {userInfo.name}
+                                            <i className="fa fa-caret-down"></i>{' '}
+                                        </Link>
                                         <ul className='dropdown-content'>
                                             <li>
                                                 <Link to="/profile">Profile</Link>
@@ -67,14 +67,14 @@ function App () {
                                             </li>
                                         </ul>
                                     </div>
-                                    
+
                                 )
                                 : <Link to='/signin'>Sign In</Link>
                         }
-                      
+
                     </div>
                 </header>
-                <main>                  
+                <main>
                     <Route path='/cart/:id?' component={CartScreen} />
                     <Route path='/product/:id' component={ProductScreen} />
                     <Route path='/signin' component={SigninScreen} />
