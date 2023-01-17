@@ -8,7 +8,7 @@ function Product(props) {
     return (
         <div className='card'>
             <Link to={`/product/${product._id}`}>
-                <img className='medium' src={product.image} alt='product' width='300px' height='300px' />
+                <img className='medium' src={product.image} alt='product' />
             </Link>
             <div className='card-body'>
                 <Link to={`/product/${product._id}`}>

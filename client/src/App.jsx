@@ -74,7 +74,7 @@ function App() {
 
                     </div>
                 </header>
-                <main>
+                <main style={{ backgroundImage: 'url(/images/HomepageMain.jpg)' }}>
                     <Route path='/cart/:id?' component={CartScreen} />
                     <Route path='/product/:id' component={ProductScreen} />
                     <Route path='/signin' component={SigninScreen} />
