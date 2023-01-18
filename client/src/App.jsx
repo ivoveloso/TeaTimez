@@ -24,6 +24,10 @@ function App() {
     const { userInfo } = userSignin;
     //signout handler 
     const dispatch = useDispatch();
+    //     const mainStyle = {
+    //         backgroundImage: 'url(/images/HomepageMain.jpg)'
+    //         background- size: 'contain'
+    // };
     const signoutHandler = () => {
         dispatch(signout());
     };
@@ -74,7 +78,8 @@ function App() {
 
                     </div>
                 </header>
-                <main style={{ backgroundImage: 'url(/images/HomepageMain.jpg)' }}>
+                {/* <main style={{ backgroundImage: 'url(/images/HomepageMain.jpg)' }}> */}
+                <main>
                     <Route path='/cart/:id?' component={CartScreen} />
                     <Route path='/product/:id' component={ProductScreen} />
                     <Route path='/signin' component={SigninScreen} />
