@@ -13,7 +13,7 @@ import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
 import OrderHisotyScreen from './screens/OrderHisotyScreen';
 import ProfileScreen from './screens/ProfileScreen';
-
+import ContactUs from './screens/ContactUs';
 function App () {
     // get cart from redux store using useSelector
     const cart = useSelector(state => state.cart);
@@ -65,6 +65,9 @@ function App () {
                                             <li>
                                                 <Link to='#signout' onClick={signoutHandler}>Sign Out</Link>
                                             </li>
+                                            <li>
+                                                <Link to="/contactus">Contact Us</Link>
+                                            </li>
                                         </ul>
                                     </div>
                                     
@@ -74,7 +77,8 @@ function App () {
                       
                     </div>
                 </header>
-                <main>                  
+                <main>   
+                    <Route path='/contactus' component={ContactUs} />            
                     <Route path='/cart/:id?' component={CartScreen} />
                     <Route path='/product/:id' component={ProductScreen} />
                     <Route path='/signin' component={SigninScreen} />
