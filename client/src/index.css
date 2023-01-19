@@ -330,11 +330,17 @@ img.large {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	}
+}
 
-	#contact-title{
-		position: absolute;
-		top: 0;
-		color: white;
-		font-size: 2rem;
-		}
+#contact-title{
+	position: absolute;
+	top: 0;
+	color: white;
+	font-size: 2rem;
+}
+
+.form-group{
+	display: flex;
+	flex-direction:column;
+	align-items: flex-start;
+ }
