@@ -16,11 +16,6 @@
   * [ Screenshots-Demo ](#Screenshots-Demo)
   * [ Project Objective ](#Project-Objective)
   * [ User Story ](#User-Story)
-  * [ Technologies ](#Technologies)
-  * [ Installation ](#Installation)
-  * [ Usage ](#Usage)
-  * [ Credits and Reference ](#Credits-and-Reference)
-  * [ Tests ](#Tests)
   * [ Author Contact ](#Author-Contact)
   * [ License ](#License)
   #
