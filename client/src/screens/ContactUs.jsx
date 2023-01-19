@@ -78,11 +78,11 @@ function ContactUs() {
         setEmail('');
         setMessage('');
         setErrorMessage('');
-        alert(`Cheers ${sender}, thanks for the message.`);
+        alert(`Thankyou ${sender} for reaching out to us.`);
     };
 
     return (
-        <section className='container-fluid contact'>
+        <section className='container-fluid text-center'>
             <h2 id="contact-title">Contact Us</h2>
             <div className='row contact-row' data-contact="hide">
                 <form
@@ -97,7 +97,7 @@ function ContactUs() {
                             value={sender}
                             type="text"
                             className='form-control'
-                            name="name"
+                            name="sender"
                             onChange={handleInputChange}
                             id="full-name"
                             placeholder='Name'

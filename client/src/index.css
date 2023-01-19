@@ -325,3 +325,16 @@ img.large {
 .table button {
 	margin: 0 0.2rem;
 }
+
+.text-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+	#contact-title{
+		position: absolute;
+		top: 0;
+		color: white;
+		font-size: 2rem;
+		}
