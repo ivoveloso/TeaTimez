@@ -344,3 +344,7 @@ img.large {
 	flex-direction:column;
 	align-items: flex-start;
  }
+
+ .subBtn {
+	background-color: #f0c040;
+  }
